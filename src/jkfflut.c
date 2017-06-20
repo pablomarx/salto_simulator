@@ -1,3 +1,5 @@
+#include "disk.h"
+
 /** @brief table constructed for update_jkff(s0,s1) */
 static jkff_t jkff_lookup[64][64] =
 {
