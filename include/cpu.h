@@ -677,22 +677,22 @@ typedef struct {
 }	cpu_t;
 
 /** @brief human readable task names */
-const char *task_name[task_COUNT];
+extern const char *task_name[task_COUNT];
 
 /** @brief register names */
-const char *r_name[rsel_COUNT];
+extern const char *r_name[rsel_COUNT];
 
 /** @brief human readable ALU function names */
-const char *aluf_name[aluf_COUNT];
+extern const char *aluf_name[aluf_COUNT];
 
 /** @brief human readable bus source names */
-const char *bs_name[bs_COUNT];
+extern const char *bs_name[bs_COUNT];
 
 /** @brief human readable F1 function names */
-const char *f1_name[f1_COUNT];
+extern const char *f1_name[f1_COUNT];
 
 /** @brief human readable F2 function names */
-const char *f2_name[f2_COUNT];
+extern const char *f2_name[f2_COUNT];
 
 /** @brief raw microcode words, decoded */
 extern uint32_t ucode_raw[UCODE_SIZE];
