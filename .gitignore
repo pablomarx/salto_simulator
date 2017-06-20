@@ -24,3 +24,7 @@ asm/helloworld.lst
 keyboard.conf
 temp/
 
+# Xcode files
+project.xcworkspace
+xcuserdata
+build
