@@ -1210,6 +1210,7 @@ static void usage(int argc, char **argv)
 	exit(0);
 }
 
+char *gROMPath = NULL;
 
 /**
  * @brief Salto main entry
@@ -1228,7 +1229,7 @@ int main(int argc, char **argv)
 	/* initialize SDL to 606x808x[default] screen */
 	sdl_init(DISPLAY_WIDTH, DISPLAY_HEIGHT, -1, title);
 
-	alto_init("roms");
+	alto_init(gROMPath ? gROMPath : "roms");
 	timer_init();
 	init_memory();
 	init_hardware();
